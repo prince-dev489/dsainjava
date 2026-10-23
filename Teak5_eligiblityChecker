@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let date = prompt("Enter date :");
+
+        date = Number(date); 
+         if(date>0 && Number.isFinite(date) && Number.isInteger(date)){
+            let result=date<=19
+            ?"You can enter in university for navratri"
+            :"You cannot enter in university for navratri";
+
+            alert(result);
+            document.write("<h3> Date: "+date +"</h3>");
+            document.write("<h3>"+result +"</h3>");
+
+         } else{
+            alert("Please enter a date");
+            document.write("<h3> Invalid date entered</h3>");
+         }
+    </script>
+    
+</body>
+</html>

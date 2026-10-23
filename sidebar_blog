@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera World</title>
+    <link rel="stylesheet" href="sidebarblog.css">
+</head>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eef1f5;
+    color: #222;
+}
+
+header {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 34px;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+.page {
+    display: flex;
+    min-height: 600px;
+}
+
+.sidebar {
+    width: 230px;
+    background: #252525;
+    padding: 30px 20px;
+}
+
+.sidebar h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar a {
+    display: block;
+    color: #ddd;
+    text-decoration: none;
+    padding: 14px;
+    margin-bottom: 10px;
+    border-left: 3px solid transparent;
+}
+
+.sidebar a:hover {
+    background: #333;
+    border-left: 3px solid white;
+    color: white;
+}
+
+main {
+    flex: 1;
+    padding: 35px;
+}
+
+section {
+    margin-bottom: 45px;
+}
+
+.welcome {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.camera-card {
+    width: 340px;
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    border: 2px solid #222;
+    border-radius: 12px;
+}
+
+.camera-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.camera-info h3 {
+    font-size: 22px;
+    margin: 5px 0 10px;
+}
+
+.camera-info h4 {
+    font-size: 21px;
+    margin: 15px 0;
+}
+
+button {
+    background: #111;
+    color: white;
+    border: none;
+    padding: 11px 22px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #444;
+}
+
+.articles {
+    display: flex;
+    gap: 20px;
+}
+
+.articles article {
+    flex: 1;
+    background: white;
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.articles span {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.articles h3 {
+    margin: 12px 0;
+}
+
+.articles a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #111;
+}
+
+.contact {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+@media (max-width: 650px) {
+
+    .page {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .sidebar h2 {
+        margin: 10px 0;
+    }
+
+    .sidebar a {
+        display: inline-block;
+        margin: 5px;
+        padding: 10px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .camera-card {
+        width: 100%;
+    }
+
+    .articles {
+        flex-direction: column;
+    }
+</section>
+<body>
+
+<header>
+    <h1>Camera World</h1>
+    <p>Capture Every Beautiful Moment</p>
+</header>
+
+<div class="page">
+
+    <nav class="sidebar">
+        <h2>Explore</h2>
+        <a href="#welcome">Home</a>
+        <a href="#camera">Camera</a>
+        <a href="#articles">Articles</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+
+        <section id="welcome" class="welcome">
+            <h2>Welcome to Camera World</h2>
+            <p>
+                Find the latest cameras, photography tips and useful
+                information for photography lovers.
+            </p>
+        </section>
+
+        <section id="camera">
+            <h2>Popular Camera</h2>
+
+            <div class="camera-card">
+                <img src="Nikon Camera.jpg" alt="Nikon Camera">
+
+                <div class="camera-info">
+                    <h3>Nikon Digital Camera</h3>
+
+                    <p>
+                        Capture sharp and detailed photographs with this
+                        powerful Nikon camera.
+                    </p>
+
+                    <h4>₹59,999</h4>
+
+                    <button>View Details</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="articles">
+            <h2>Photography Tips</h2>
+
+            <div class="articles">
+
+                <article>
+                    <span>01</span>
+                    <h3>Camera Basics</h3>
+                    <p>
+                        Understand shutter speed, ISO and aperture
+                        to improve your photography.
+                    </p>
+                    <a href="#">Read Article</a>
+                </article>
+
+                <article>
+                    <span>02</span>
+                    <h3>Outdoor Photography</h3>
+                    <p>
+                        Learn how natural light and composition can
+                        make outdoor photos look better.
+                    </p>
+                    <a href="#">Read Article</a>
+                </article>
+
+                <article>
+                    <span>03</span>
+                    <h3>Photo Editing</h3>
+                    <p>
+                        Basic editing techniques can enhance colors,
+                        brightness and overall image quality.
+                    </p>
+                    <a href="#">Read Article</a>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <p>Email: cameraworld@example.com</p>
+            <p>Phone: +91 98765 43210</p>
+        </section>
+
+    </main>
+
+</div>
+
+<footer>
+    <p>© 2026 Camera World</p>
+</footer>
+
+</body>
+</html>
